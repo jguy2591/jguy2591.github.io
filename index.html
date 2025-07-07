@@ -9,6 +9,29 @@
     <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> Optional favicon -->
     <!-- Add any additional meta tags or external resources here -->
     <style>
+        .greeting{
+            padding: 70px 70px 200px 70px;
+        }
+        .gallery{
+            padding: 70px 70px 200px 70px;
+        }
+        .middle1{
+            font-family:  Helvetica, sans-serif;
+            color:#0074D9;
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+        .middle{
+            font-family:  Helvetica, sans-serif;
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+        .welcome{
+            font-family: Helvetica, sans-serif;
+            color:#0074D9
+        }
         body {
             font-family: Georgia, Helvetica, sans-serif;
         }
@@ -50,8 +73,14 @@
 
         .toplinks {
         margin: auto;
-        width: 50%;
+        text-align: center;
         padding: 10px;
+        }
+
+        .img{
+            border-radius: 8px;
+            width: 200px;
+            height: auto;
         }
     </style>
 </head>
@@ -59,20 +88,18 @@
 <body onload="loadPage()">
     <!-- removed javascript -->
     <!-- <table width="980" cellspacing=0 cellpadding=6 align=center border=0 onMouseOver="main_tab_move()"> -->
-   <table width="980" cellspacing=0 cellpadding=6 align=center border=0 ">
+   <table width="980" cellspacing=0 cellpadding=8 align=center border=0 ">
   <tr>
-    <!-- 최상단 좌측 타이틀 이미지(로고) -->
-    <td> 
+     <td> 
       <a href='https://jguy2591.github.io'><img src="./NHC-Logo-1.jpeg" border=0 align=left></a>
     </td>
-    <!-- # 최상단 가운데 -->
     <td align=center> 
         <a href="https://www.youtube.com/@jaemun7086"><img src="./yt_logo_rgb_light.png" width="150" height="30" border=0 align=left></a>
     </td>
   </tr>
 </table>
 <div class="toplinks">
-    <table width="982" cellspacing="0" cellpadding="0" align="center">
+    <table  align="center">
         <tbody>
             <tr align="center">
                 <ul>
@@ -94,6 +121,42 @@
     </table>
 </div>
 
+<div class="greeting">
+    <h2 class="welcome">Welcome!</h2>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <p>Please join every Sunday at 11:00am. We meet at 701 Scaleybark Rd. Charlotte, NC 28209.
+
+                    You can expect a time of worship through song, Scripture readings, and community prayer. Our kids gather for age-appropriate learning during the message and we conclude each service with light refreshments. Come join us!
+                    </p>
+                </td>
+                <td>
+                    <img src="photo-1479317299265-ba833017ef80.jpeg"/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- <div class="middle">
+        <h4 class="middle1">WELCOME TO NEW HOPE</h4>
+        <h2>Experience a welcoming and diverse community where you can</h2>
+        <p>Join us for inspiring worship, meaningful connections, and opportunities to serve our local communities.</h2></p>
+    </div> -->
+    
+    <div class="gallery">
+        <h3 class="welcome">Gallery</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="./thecross.jpeg" class="img">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 
 
 </body>
