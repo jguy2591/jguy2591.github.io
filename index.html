@@ -2,9 +2,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Charlotte Presbyterian Church">
+    <meta name="description" content="New Hope Church Charlotte">
     <meta name="keywords" content="HTML, Template, Header">
-    <title>Sermons</title>
+    <title>New Hope Church Charlotte</title>
     <!-- <link rel="stylesheet" href="styles.css"> Link to your CSS file -->
     <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> Optional favicon -->
     <!-- Add any additional meta tags or external resources here -->
@@ -29,12 +29,73 @@
 </head>
 
 <body onload="loadPage()">
-   <h1>Sermons</h1>
-   <p id="date"></p>
-   <p id="sermon_text"></p>
-   <ul id="links">
-        <li >index</li>
-        <li id="link0"></li>
-   </ul>
+   <table width="980" cellspacing=0 cellpadding=6 align=center border=0 onMouseOver="main_tab_move()">
+  <tr>
+
+    <!-- 최상단 좌측 타이틀 이미지(로고) -->
+    <td> 
+      <a href='https://www.jguy2591.github.io'><img src="./NHC-Logo-1.jpeg" border=0 align=left></a>
+    </td>
+
+    <!-- # 최상단 가운데 -->
+    <td align=center> 
+ <a href="https://www.youtube.com/@GardenChurchMD"><img src="./skin_board/k_build_home/b_img_add/yt_logo_rgb_light.png" width="150" height="30" border=0 align=left></a>
+</td>
+
+
+    <!-- # 최상단 우측 -->
+    <td align=right valign=top style='padding-right:15; padding-top:0;'>
+
+      <!-- 우측 텍스트 메뉴 -->
+      <div class=topright_div>
+        
+            <a onClick="iwindow_OPEN('iwindow_login','','','width=180,height=90,left=350,top=20')">로그인</a> ｜
+            <a href="board.php?board=sermon&command=member&exe=regist_form&PHPSESSID=f532f567d36eb213e336dd42a28e049e">회원등록</a> ｜
+            <a href="board.php?board=sermon&command=member&exe=passwd_lose&PHPSESSID=f532f567d36eb213e336dd42a28e049e">비번분실</a>
+                  ｜ <a onClick="iwindow_OPEN('iwindow_joinlist','','','width=180,height=300,left=350,top=20,btn_grow=y')">현재접속자</a>
+      </div>
+      <!-- 통합검색폼 -->
+        <form method=post name='iMainSearch' onSubmit="return search_action1(this)"
+          action="board.php?board=search&command=skin_insert&exe=insert_iboard1_search"><input type="hidden" name="PHPSESSID" value="f532f567d36eb213e336dd42a28e049e" />
+          <select align=absmiddle name='ish_period' style="width:70; font-size:8pt; font-family:돋움; color:#777777; display:none;">
+            <option value='31'>최근1개월
+            <option value='92'>최근3개월
+            <option value='183'>최근6개월
+            <option value='366' selected>최근 1년
+            <option value='730'>최근 2년
+            <option value='all'>전체
+          </select><select align=absmiddle name='ish_field' style='width:48; font-size:8pt; font-family:돋움; color:#777777; display:none;'>
+            <option value='tbody'>본문
+            <option value='subject'>제목
+            <option value='name'>이름
+            <option value='mnick'>별명
+            <option value='id'>ID
+            <option value='google'>구글
+          </select>
+          <img src='./skin_board/k_build_home/b_img_add/btn_search_r.gif' align=absmiddle><input
+          type=text name='ish_wodrd' value=""
+          style='width:95; height:18; border:1px solid #999999; border-width:1 0 1 0; vertical-align:middle;'><img
+          src='./skin_board/k_build_home/b_img_add/btn_search_c.gif' align=absmiddle onClick="search_option_y()"
+          style='cursor:pointer'><input type=image src="./skin_board/k_build_home/b_img_add/btn_search_a.gif?PHPSESSID=f532f567d36eb213e336dd42a28e049e" border=0 align=absmiddle>
+        </form>
+        <script language="JavaScript">
+          function search_action1(sh_form){//submit()
+            if(sh_form.ish_wodrd.value.length<2){alert('검색어를 입력하십시오.'); return false;}
+            if(sh_form.ish_field.value=='google'){window.open("http://www.google.co.kr/custom?domains=www.ghgpc.com&sitesearch=www.ghgpc.com&q="+sh_form.ish_wodrd.value); return false;} // google
+          }
+          function search_option_y(){// select option
+            document.getElementById('main_tab_id2').style.display='none';
+            document.getElementById('main_tab_id3').style.display='none';
+            document.iMainSearch.ish_period.style.display='';
+            document.iMainSearch.ish_field.style.display='';
+          }
+          if("") document.iMainSearch.ish_period.value=""; // 검색출력시 상태 : [기간선택]
+          if("") document.iMainSearch.ish_field.value=""; // 검색출력시 상태 : [필드선택]
+        </script>
+    </td>
+  </tr>
+</table>
+
+
 </body>
 </html>
