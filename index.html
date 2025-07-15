@@ -50,10 +50,7 @@
             display: inline;
             margin-right: 3px;
         }
-        img{
-            width: 150px;
-            display:none;
-        }
+        
         a:link {
         color: black;
         }
@@ -84,7 +81,7 @@
         padding: 10px;
         }
 
-        .img{
+        .img1{
             border-radius: 8px;
             width: 300px;
             height: auto;
@@ -96,7 +93,10 @@
         .w3-display-container:hover .w3-display-hover{display:block}.w3-display-container:hover span.w3-display-hover{display:inline-block}.w3-display-hover{display:none}
         .w3-content,.w3-auto{margin-left:auto;margin-right:auto}.w3-content{max-width:980px}.w3-auto{max-width:1140px}
         .w3-left{float:left!important}.w3-right{float:right!important}
-        
+        .logo{
+            width: 150px;
+            height: auto;
+        }
         .img2{
             border-radius: 8px;
             width: auto;
@@ -119,18 +119,20 @@
 </head>
 
 <body onload="start()">
+    <div>
     <!-- removed javascript -->
     <!-- <table width="980" cellspacing=0 cellpadding=6 align=center border=0 onMouseOver="main_tab_move()"> -->
    <table width="100%" cellspacing=0 cellpadding=8 align=center border=0 ">
   <tr>
      <td> 
-      <a href='https://newhopechurchclt.net'><img src="./NHC-Logo-1.jpeg" border=0 align=left></a>
+      <a href='https://newhopechurchclt.net'><img class="logo" src="./NHC-Logo-1.jpeg" border=0 align=left></a>
     </td>
     <td align=center> 
         <a href="https://www.youtube.com/@jaemun7086"><img src="./yt_logo_rgb_light.png" width="150" height="30" border=0 align=left></a>
     </td>
   </tr>
 </table>
+</div>
 <div class="toplinks">
     <table  class="toptable" align="center" border-spacing=10 px cellspacing=5 cellpadding=5>
         <tbody>
@@ -187,19 +189,19 @@
             <tbody>
                 <tr>
                     <td>
-                        <img class="mySlides img" src="./IMG_4906.JPEG">
+                        <img class="mySlides img1" src="./IMG_4906.JPEG">
                     
-                        <img class="mySlides img" src="./IMG_4905.JPEG">
+                        <img class="mySlides img1" src="./IMG_4905.JPEG">
                     
-                        <img class="mySlides img" src="./IMG_4907.JPEG">
+                        <img class="mySlides img1" src="./IMG_4907.JPEG">
                     
-                        <img class="mySlides img" src="./IMG_4908.JPEG">
+                        <img class="mySlides img1" src="./IMG_4908.JPEG">
                     
-                        <img class="mySlides img" src="./IMG_4909.JPEG">
+                        <img class="mySlides img1" src="./IMG_4909.JPEG">
                     
-                        <img class="mySlides img" src="./IMG_4910.JPEG">
+                        <img class="mySlides img1" src="./IMG_4910.JPEG">
                     
-                        <img class="mySlides img" src="./IMG_4911.jpg">
+                        <img class="mySlides img1" src="./IMG_4911.jpg">
                         <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
                         <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
                         <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
@@ -212,8 +214,6 @@
     </div>
 </div>
 
-
-</body>
 <footer>
     <script>
         
@@ -241,4 +241,5 @@
         }
     </script>
 </footer>
+</body>
 </html>
